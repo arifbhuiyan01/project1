@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+      <div class="bg-[url(hero-min.jpg)] h-[745px] w-full bg-cover bg-fixed">
+        <div class="bg-[#000000] opacity-75 h-[745px] w-full md:px-36 py-6">
+          <nav class="shadow-lg">
+            <div class="max-w-6xl mx-auto px-4">
+              <div class="flex justify-between">
+                <div class="flex space-x-7">
+                  <div></div>
+                  <!-- Primary Navbar items -->
+                  <div class="hidden md:hidden md:flex items-center space-x-1">
+                    <a
+                      href=""
+                      class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold"
+                      >Home</a
+                    >
+                    <a
+                      href=""
+                      class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                      >Services</a
+                    >
+                    <a
+                      href=""
+                      class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                      >About</a
+                    >
+                    <a
+                      href=""
+                      class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:hidden md:flex items-center space-x-3">
+                  <a
+                    href=""
+                    class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300"
+                    >Log In</a
+                  >
+                  <a
+                    href=""
+                    class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"
+                    >Sign Up</a
+                  >
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                    <svg
+                      class="w-6 h-6 text-gray-500"
+                      x-show="!showMenu"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+              <ul class="">
+                <li class="active">
+                  <a
+                    href="index.html"
+                    class="block text-sm px-2 py-4 text-white font-semibold"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#services" class="block text-sm px-2 py-4 text-white"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <script>
+              const btn = document.querySelector("button.mobile-menu-button");
+              const menu = document.querySelector(".mobile-menu");
+
+              btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+              });
+            </script>
+          </nav>
+          <img class="w-24 h-24" src="newproject/logo-white.png" alt="" />
+          <h1
+            class="text-white text-[48px] h-[30px] w-[1000px] pt-[200px] pb-[150px]"
+          >
+            GOODBYE JUNK FOOD. <br />
+            HELLO SUPER HEALTHY MEALS.
+          </h1>
+          <button
+            class="text-[20px] border-2 border-orange-400 px-3 py-1 rounded-2xl bg-white hover:bg-orange-600 text-center mr-[20px]"
+          >
+            Sign up now
+          </button>
+          <button
+            class="text-[20px] border-2 border-orange-400 px-3 py-1 rounded-2xl bg-white hover:bg-orange-400 text-center"
+          >
+            Sign up now
+          </button>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div
+      class="h-20 flex justify-between items-center px-10 sticky top-0 z-40 bg-white"
+    >
+      <img class="w-14 h-14" src="newproject/logo.png" alt="" />
+      <ul class="flex space-x-7 text-[20px]">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <div class="">
+      <h2 class="pt-[80px] pb-[32px] text-[36px] text-center">
+        GET FOOD FAST — NOT FAST FOOD.
+      </h2>
+      <div
+        class="border-b-2 border-orange-400 w-[200px] items-center m-auto"
+      ></div>
+      <p class="text-center text-[20px] w-[70%] my-8 mx-auto">
+        Hello, we’re Omnifood, your new premium food delivery service. We know
+        you’re always busy. No time for cooking. So let us take care of that,
+        we’re really good at it, we promise!
+      </p>
+    </div>
+    <div class="mx-[70px] mb-32 md:mx-auto">
+      <div class="lg:flex justify-around">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="70"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <h3 class="w-[224px] text-[23px]">UP TO 365 DAYS/YEAR</h3>
+          <p class="w-[224px] text-[18px]">
+            Never cook again! We really mean that. Our subscription plans
+            include up to 365 days/year coverage. You can also choose to order
+            more flexibly if that's your style.
+          </p>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="70"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <h3 class="w-[224px] text-[23px]">UP TO 365 DAYS/YEAR</h3>
+          <p class="w-[224px] text-[18px]">
+            Never cook again! We really mean that. Our subscription plans
+            include up to 365 days/year coverage. You can also choose to order
+            more flexibly if that's your style.
+          </p>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="70"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <h3 class="w-[224px] text-[23px]">UP TO 365 DAYS/YEAR</h3>
+          <p class="w-[224px] text-[18px]">
+            Never cook again! We really mean that. Our subscription plans
+            include up to 365 days/year coverage. You can also choose to order
+            more flexibly if that's your style.
+          </p>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="70"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <h3 class="w-[224px] text-[23px]">UP TO 365 DAYS/YEAR</h3>
+          <p class="w-[224px] text-[18px]">
+            Never cook again! We really mean that. Our subscription plans
+            include up to 365 days/year coverage. You can also choose to order
+            more flexibly if that's your style.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-4 origin-center mb-32">
+      <img
+        class="hover:scale-125 hover:brightness-50"
+        src="newproject/1.jpg "
+        alt=""
+      />
+      <img
+        class="hover:scale-125 hover:brightness-50"
+        src="newproject/1.jpg "
+        alt=""
+      />
+      <img
+        class="hover:scale-125 hover:brightness-50"
+        src="newproject/1.jpg "
+        alt=""
+      />
+      <img
+        class="hover:scale-125 hover:brightness-50"
+        src="newproject/1.jpg "
+        alt=""
+      />
+      <img
+        class="hover:scale-125 hover:brightness-50"
+        src="newproject/1.jpg "
+        alt=""
+      />
+      <img
+        class="hover:scale-125 hover:brightness-50"
+        src="newproject/1.jpg "
+        alt=""
+      />
+      <img
+        class="hover:scale-125 hover:brightness-50"
+        src="newproject/1.jpg "
+        alt=""
+      />
+      <img
+        class="hover:scale-125 hover:brightness-50"
+        src="newproject/1.jpg "
+        alt=""
+      />
+    </div>
+    <div>
+      <h2 class="pb-[32px] text-[36px] text-center">
+        GET FOOD FAST — NOT FAST FOOD.
+      </h2>
+      <div
+        class="border-b-2 border-orange-400 w-[200px] items-center m-auto"
+      ></div>
+    </div>
+    <div class="flex justify-center items-center space-x-11 py-24">
+      <img
+        class="reveal h-[450px] hover:translate-y-0 hover:opacity-100"
+        src="newproject/app-iPhone.png"
+        alt=""
+      />
+      <div>
+        <div class="flex items-center py-auto">
+          <div
+            class="border-[3px] m-10 w-[55px] h-[55px] items-center text-center text-[30px] rounded-full border-orange-400 text-orange-400"
+          >
+            1
+          </div>
+          <p class="w-[460px] text-[22px]">
+            Choose the subscription plan that best fits your needs and sign up
+            today.
+          </p>
+        </div>
+
+        <div class="flex items-center">
+          <div
+            class="border-[3px] m-10 w-[55px] h-[55px] items-center text-center text-[30px] rounded-full border-orange-400 text-orange-400"
+          >
+            1
+          </div>
+          <p class="w-[460px] text-[22px]">
+            Choose the subscription plan that best fits your needs and sign up
+            today.
+          </p>
+        </div>
+        <div class="flex items-center">
+          <div
+            class="border-[3px] m-10 w-[55px] h-[55px] items-center text-center text-[30px] rounded-full border-orange-400 text-orange-400"
+          >
+            1
+          </div>
+          <p class="w-[460px] text-[22px]">
+            Choose the subscription plan that best fits your needs and sign up
+            today.
+          </p>
+        </div>
+        <div class="flex items-center space-x-4 ml-9 pt-6">
+          <img class="w-36" src="newproject/download-app-android.png" alt="" />
+          <img class="w-36" src="newproject/download-app-android.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="my-[120px]">
+      <h2 class="pb-[32px] text-[36px] text-center">
+        GET FOOD FAST — NOT FAST FOOD.
+      </h2>
+      <div
+        class="border-b-2 border-orange-400 w-[200px] items-center m-auto"
+      ></div>
+    </div>
+
+    <div class="grid md:grid-cols-4 ml-14 m-auto items-center pb-[120px]">
+      <div class="w-[300px]">
+        <img src="newproject/lisbon-3.jpg" alt="" />
+        <h3 class="text-[22px] py-4">LISBON</h3>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+      </div>
+
+      <div class="w-[300px]">
+        <img src="newproject/lisbon-3.jpg" alt="" />
+        <h3 class="text-[22px] py-4">LISBON</h3>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+      </div>
+
+      <div class="w-[300px]">
+        <img src="newproject/lisbon-3.jpg" alt="" />
+        <h3 class="text-[22px] py-4">LISBON</h3>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+      </div>
+
+      <div class="w-[300px]">
+        <img src="newproject/lisbon-3.jpg" alt="" />
+        <h3 class="text-[22px] py-4">LISBON</h3>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+        <div class="flex space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <p class="text-[20px]">1600+ happy eaters</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="bg-[url(hero-min.jpg)] h-[545px] w-full bg-cover bg-fixed">
+        <div
+          class="bg-[#000000] opacity-75 h-[545px] w-full bg-fixed bg-cover"
+        ></div>
+      </div>
+    </div>
+    <div class="my-[120px]">
+      <h2 class="pb-[32px] text-[36px] text-center">
+        GET FOOD FAST — NOT FAST FOOD.
+      </h2>
+      <div
+        class="border-b-2 border-orange-400 w-[200px] items-center m-auto"
+      ></div>
+    </div>
+    <div class="grid grid-cols-3 items-center ml-[150px] mr-[100px]">
+      <div class="text-center">
+        <div
+          class="w-[370px] h-[180px] bg-slate-100 p-[15px] border-b-2 border-gray-200"
+        >
+          asfdsdgvsgs
+        </div>
+        <div
+          class="w-[370px] h-[140px] bg-slate-100 p-[15px] border-b-2 border-gray-200"
+        ></div>
+        <div
+          class="w-[370px] h-[80px] bg-slate-100 p-[15px] border-b-2 border-gray-200"
+        >
+          <button
+            class="text-[20px] border-2 border-orange-400 px-3 py-1 rounded-2xl bg-white hover:bg-orange-400 text-center"
+          >
+            Sign up now
+          </button>
+        </div>
+      </div>
+      <div class="text-center">
+        <div
+          class="w-[370px] h-[180px] bg-slate-100 p-[15px] border-b-2 border-gray-200"
+        >
+          asfdsdgvsgs
+        </div>
+        <div
+          class="w-[370px] h-[140px] bg-slate-100 p-[15px] border-b-2 border-gray-200"
+        ></div>
+        <div
+          class="w-[370px] h-[80px] bg-slate-100 p-[15px] border-b-2 border-gray-200"
+        >
+          <button
+            class="text-[20px] border-2 border-orange-400 px-3 py-1 rounded-2xl bg-white hover:bg-orange-400 text-center"
+          >
+            Sign up now
+          </button>
+        </div>
+      </div>
+      <div class="text-center">
+        <div
+          class="w-[370px] h-[180px] bg-slate-100 p-[15px] border-b-2 border-gray-200"
+        >
+          asfdsdgvsgs
+        </div>
+        <div
+          class="w-[370px] h-[140px] bg-slate-100 p-[15px] border-b-2 border-gray-200"
+        ></div>
+        <div
+          class="w-[370px] h-[80px] bg-slate-100 p-[15px] border-b-2 border-gray-200"
+        >
+          <button
+            class="text-[20px] border-2 border-orange-400 px-3 py-1 rounded-2xl bg-white hover:bg-orange-400 text-center"
+          >
+            Sign up now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="my-[120px]">
+      <h2 class="pb-[32px] text-[36px] text-center">
+        GET FOOD FAST — NOT FAST FOOD.
+      </h2>
+      <div
+        class="border-b-2 border-orange-400 w-[200px] items-center m-auto"
+      ></div>
+    </div>
+    <div class="pb-[120px]">
+      <div
+        class="md:w-[1085px] md:h-[90px] md:px-7 m-auto items-center md:flex"
+      >
+        <p class="w-[350px] h-[23px] text-[20px] items-center ml-10 md:ml-0">
+          Name
+        </p>
+        <input
+          class="md:w-[702px] w-[300px] h-[33px] p-5 border-2 text-[20px] ml-10 md:ml-0"
+          type="text"
+          placeholder="Your Name"
+        />
+      </div>
+      <div
+        class="md:w-[1085px] md:h-[90px] md:px-7 m-auto items-center md:flex"
+      >
+        <p class="w-[350px] h-[23px] text-[20px] items-center ml-10 md:ml-0">
+          Name
+        </p>
+        <input
+          class="md:w-[702px] w-[300px] h-[33px] p-5 border-2 text-[20px] ml-10 md:ml-0"
+          type="text"
+          placeholder="Your Name"
+        />
+      </div>
+      <div class="w-[1085px] h-[90px] px-7 m-auto items-center flex">
+        <p class="w-[350px] h-[23px] text-[20px] items-center">
+          How did you find us ?
+        </p>
+        <select
+          class="w-[702px] h-[33px] p-5 border-2 text-[20px]"
+          name="choose"
+          id=" choose"
+        >
+          <option value="1">Friends</option>
+          <option value="2">Search Engine</option>
+        </select>
+      </div>
+      <div class="w-[1085px] h-[90px] px-7 m-auto flex items-center">
+        <p class="w-[350px] h-[23px] text-[20px] items-center">Newsletter</p>
+        <input
+          class="w-[702px] h-[33px] p-5 border-2 text-[20px] mr-[490px]"
+          type="checkbox"
+        />
+      </div>
+      <div class="w-[1085px] h-[90px] px-7 m-auto flex">
+        <p class="w-[350px] h-[23px] text-[20px]">Drop us a line</p>
+
+        <textarea
+          class="w-[702px] h-[103px] p-5 border-2 text-[20px]"
+          name="details"
+          id=""
+          cols="1"
+          rows="4"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="h-[200px] w-full bg-gray-700 p-[50px]">
+      <div class="flex justify-between">
+        <div class="space-x-7">
+          <a class="text-white text-[15px]" href="">About</a>
+          <a class="text-white text-[15px]" href="">Blog</a>
+          <a class="text-white text-[15px]" href="">Press</a>
+          <a class="text-white text-[15px]" href="">Iso app</a>
+          <a class="text-white text-[15px]" href="">Android app</a>
+        </div>
+        <div class="flex space-x-5">
+          <svg
+            class="hover:fill-emerald-500"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <svg
+            class="hover:fill-emerald-500"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+          <svg
+            class="hover:fill-emerald-500"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e67e22"
+            class="bi bi-at"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+            />
+          </svg>
+        </div>
+      </div>
+      <p class="text-white text-[15px] text-center p-[20px]">
+        Copyright © 2015 by Omnifood. All right reserved.
+      </p>
+    </div>
+  </body>
+</html>
